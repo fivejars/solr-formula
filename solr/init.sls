@@ -17,7 +17,7 @@ solr_get:
   file.managed:
     - name: /opt/{{solr_name}}-{{solr_ver}}.tgz
     - source: {{solr_url}}{{solr_ver}}/{{solr_name}}-{{solr_ver}}.tgz
-    - source_hash: {{solr_url}}{{solr_ver}}/{{solr_name}}-{{solr_ver}}.tgz.md5
+    - source_hash: {{solr_url}}{{solr_ver}}/{{solr_name}}-{{solr_ver}}.tgz.sha512
     - if_missing: /opt/{{solr_name}}-{{solr_ver}}/
 
 solr_extract:
