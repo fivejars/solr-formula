@@ -75,6 +75,9 @@ case "$1" in
   start|stop|restart|status)
     SOLR_CMD="$1"
     ;;
+  reload)
+    SOLR_CMD="restart"
+    ;;
   *)
     echo "Usage: $0 {start|stop|restart|status}"
     exit
