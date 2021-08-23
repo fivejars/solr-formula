@@ -59,10 +59,10 @@ GC_TUNE="-XX:NewRatio=3 \
 # Set the ZooKeeper connection string if using an external ZooKeeper ensemble
 # e.g. host1:2181,host2:2181/chroot
 # Leave empty if not using SolrCloud
-ZK_HOST="{{ zk_nodes|join(", ") }}"
+#ZK_HOST="{{ zk_nodes|join(", ") }}"
 
 # Set the ZooKeeper client timeout (for SolrCloud mode)
-ZK_CLIENT_TIMEOUT="{{zk_timeout}}"
+#ZK_CLIENT_TIMEOUT="{{zk_timeout}}"
 
 # By default the start script uses "localhost"; override the hostname here
 # for production SolrCloud environments to control the hostname exposed to cluster state
