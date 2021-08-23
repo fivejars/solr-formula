@@ -66,7 +66,7 @@ GC_TUNE="-XX:NewRatio=3 \
 
 # By default the start script uses "localhost"; override the hostname here
 # for production SolrCloud environments to control the hostname exposed to cluster state
-SOLR_HOST="{{ grains.fqdn_ip4.0 }}"
+#SOLR_HOST="{{ grains.fqdn_ip4.0 }}"
 
 # By default the start script uses UTC; override the timezone if needed
 #SOLR_TIMEZONE="UTC"
